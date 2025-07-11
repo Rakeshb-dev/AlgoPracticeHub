@@ -1,4 +1,4 @@
-package com.Kunal.LinkedList.SingleLinkedList;
+package com.Kunal.LinkedList;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.Kunal.LinkedList.SingleLinkedList;
+package com.Kunal.LinkedList;
 
 public class DoubleLinkedList {
     private Node head;
