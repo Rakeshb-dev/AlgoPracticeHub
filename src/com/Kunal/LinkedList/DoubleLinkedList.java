@@ -2,7 +2,6 @@ package com.Kunal.LinkedList;
 
 public class DoubleLinkedList {
     private Node head;
-    private Node tail;
     private int size;
 
     /* Insertion At First */
@@ -10,10 +9,10 @@ public class DoubleLinkedList {
         Node node = new Node(val);
         node.next =head;
         node.prev=null;
-        head = node;
-        if(tail==null){
-            tail=head;
+        if(head!=null) {
+            head.prev = node;
         }
+        head = node;
         size++;
     }
 
@@ -24,8 +23,6 @@ public class DoubleLinkedList {
         }
         Node node = new Node(val);
         node.next=null;
-        node.prev=tail;
-        tail=node;
         size++;
     }
     /* Display */
@@ -45,13 +42,6 @@ public class DoubleLinkedList {
         public Node(int val){
             this.val=val;
         }
-
-        public Node(int val, Node next) {
-            this.val = val;
-            this.next = next;
-        }
-
-
         public Node(int val, Node next, Node prev) {
             this.val = val;
             this.next = next;
