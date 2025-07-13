@@ -11,4 +11,12 @@ public class Array_Count {
         }
         return arr1;
     }
+    public Integer[] arr2(int val){
+        Scanner sc = new Scanner(System.in);
+        Integer[] arr1 = new Integer[val];
+        for(int i = 0;i<val;i++){
+            arr1[i]=sc.nextInt();
+        }
+        return arr1;
+    }
 }
