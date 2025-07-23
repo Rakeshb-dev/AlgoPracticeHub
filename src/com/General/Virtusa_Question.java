@@ -1,4 +1,4 @@
-package com.geeks.Hash;
+package com.General;
 
 import java.util.ArrayList;
 import java.util.Arrays;
